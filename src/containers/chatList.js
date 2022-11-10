@@ -20,7 +20,6 @@ const chatListContainer = ({ children, ...restProps }) => {
 
   const [snapshots, loading, error] = useList(allUsersRef);
 
-  console.log(db);
   snapshots.map((data) => {
     const { email: friendsEmail } = data.val();
 

@@ -10,7 +10,6 @@ const chatWindowContainer = ({ children, ...restProps }) => {
     useContext(UserContext);
 
   const [chatMessage, setChatMessage] = useState("");
-
   const activeGroupRef = db
     .ref(`chats/${activeChatRoom}`)
     .orderByChild("timestamp");
@@ -24,7 +23,6 @@ const chatWindowContainer = ({ children, ...restProps }) => {
       .equalTo("received")
       .on("child_added", (snapshot) => {
         const { sent_by } = snapshot.val();
-
         if (sent_by !== email) {
           db.ref(`chats/${activeChatRoom}/${snapshot.key}`).update({
             status: "seen",
