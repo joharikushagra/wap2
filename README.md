@@ -12,3 +12,4 @@ Link: [Click Here](https://whatsapp-clone-84df5.web.app/)
 
 # Home page
 ![screenshot](https://i2.paste.pics/JQ29G.png)
+![ex1](https://github.com/joharikushagra/sign-lens/assets/57484457/d214d718-6771-48ed-b6ee-01da004325a6)
